@@ -1,0 +1,10 @@
+@(elements: helper.FieldElements)
+
+<dl class=" " id="input_field">
+<dt><label for="@elements.id">@elements.label</label></dt>
+<dd>
+@elements.input
+</dd>
+<dd><span class="help-inline">@elements.infos.mkString(", ")</span></dd>
+<span class="errors">@elements.errors.mkString(", ")</span>
+<br>
